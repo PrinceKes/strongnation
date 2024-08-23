@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #060621;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    color: #FFFFFF;
+}
+
+.top-view {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden; /* Ensure the video doesn't overflow the section */
+}
+
+/* .topwe{
+    font-weight: 300;
+    font-size: medium;
+} */
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.top-view h1, .top-view .message-ceo {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.top-view h1 {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.message-ceo {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.about-section, .projects-section, .expertise-section, .feedback-section, .faq-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.feedback-section{
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.skills, .projects, .expertise, .faq {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-box, .project-box, .expertise-box, .faq-item {
+    background-color: #0B1632;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.skill-box h4, .project-box h4, .expertise-box h4, .faq-item h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill-box p, .expertise-box p, .faq-item p {
+    font-size: 1em;
+    color: #A5A5A5;
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feedback-carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.feedback-box {
+    display: none;
+    font-size: 1.2em;
+    color: #A5A5A5;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 4px 8px rgba(150, 150, 150, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feedback-box:nth-child(1) {
+    display: block;
+}
+
+.client-detail{
+    color: #ffffff;
+    align-items: self-end;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    margin-right: 23em;
+    justify-content: space-between;
+}
+
+
+
+/* FAQ Section */
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.faq-item {
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #0B1632;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #A5A5A5;
+}
+
+/* Toggle FAQ answer visibility */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+/* Footer Styles */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 40px;
+
+}
+
+/* Footer Left Section */
+.footer-left {
+    text-align: left;
+}
+
+/* CEO Name Styles */
+.ceo-name {
+    font-size: 1.5em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    background: linear-gradient(45deg, #ff7e5f, #f1e045); /* Apply gradient color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+}
+
+/* StrongNation Styles */
+.strongnation {
+    font-size: 1.2em; /* Slightly smaller than the main name */
+    background: linear-gradient(45deg, #06beb6, #4df377); /* Different gradient for contrast */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    /* Responsive design for smaller screens */
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-center {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .footer-right {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+.ceo-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.badge img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.badge {
+    background-color: #1E2852;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .skill-box, .project-box, .expertise-box, .faq-item {
+        width: calc(110% - 40px);
+    }
+
+    .top-view h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-box, .project-box, .expertise-box, .faq-item {
+        width: 100%;
+    }
+
+    .top-view h1 {
+        font-size: 1.5em;
+    }
+
+    .message-ceo {
+        padding: 8px 16px;
+    }
+}
+
+/* General Box Shadows */
+.skill-box, .project-box, .expertise-box, .faq-item {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
